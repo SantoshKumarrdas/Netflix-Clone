@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home | Netflix</title>
+    <link href="homepage.css" rel="stylesheet"/>
+    <script src="net.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav">
+            <div class="nav_left">
+                <a href="index.html">
+                <img class="nav_logo" src="./image/logo.png" alt="" height="80" ></a>
+            </div>
+            <div class="sk">
+                <div> <p>Home</p></div>
+                <div> <p>Tv Show</p></div>
+                <div> <p>movie</p></div>
+                <div> <p>News</p></div>
+                <div> <p>My List</p></div>
+            </div>
+        
+            <div class="sk1">
+               <P>Children</P>
+            </div>
+            <div class="sk2">
+                <input placeholder="search">
+            </div>
+            <div class="nav_right">
+            <img src="./image/logo.1.png" class="nav_avatar" alt="" height="60">
+
+        </div>
+    </div> 
+    <!-- banner -->
+    <header id="banner" class="banner-container">
+        <div id="banner_content">
+            <h1 id="banner_title"></h1>
+            <div id="banner_buttons">
+                <button type="button" class="button" id="play_button">Play</button>
+                <button type="button" class="button" id="mylist_button">My list</button>
+            </div>
+            <p id="banner_description"></p>
+        </div>
+        <div id="banner_fadeBottom">
+        </div>
+    </header>
+    <!-- Row -->
+    <div id="headrow">
+        <div class="row">
+            <h2 class="row_title"></h2>
+            <div class="row_posters"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("scroll",function(){
+            var nav=document.querySelector(".nav");
+            console.log("Nav is",nav)
+            nav.classList.toggle("active",window.scrollY > 0);
+        })
+    </script>
+    <footer>
+        <div class="foot-panel1">
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <a>FAQ </a>
+                <a>Investor Relations</a>
+                <a>Privacy</a>
+                <a>Speed Test</a>
+                <select>
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select>
+                <p>Netflix India</p>
+            </ul>
+            <ul>
+                <a>Help Centre</a>
+                <a>Jobs</a>
+                <a>Cookie Preferences</a>
+                <a>Legal Notices</a>
+            </ul>
+            <ul>
+                <a>Account</a>
+                <a>Way to watch</a>
+                <a>Corporate Information</a>
+                <a>Only on Netflix</a>
+            </ul>
+            <ul>
+                <a>Media Centre</a>
+                <a>Terms of Use</a>
+                <a>Contact Us</a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
